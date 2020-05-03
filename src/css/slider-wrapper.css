@@ -1,0 +1,33 @@
+.slider-wrapper {
+	width: 1180px;
+	height: 505px;
+}
+#carouselButtons {
+    margin-left: 100px;
+    position: absolute;
+    bottom: 0px;
+}
+
+#homeCarousel .left span, #homeCarousel .right span {
+	width: 30px;
+    height: 65px;
+    background: #F1F1F1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-slide {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #0652dd
+}
+
+.slider-slide.is-bright {
+    background-color: #054bc9
+}
+

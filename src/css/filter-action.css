@@ -1,0 +1,379 @@
+.news-demo {
+    /*background: #fff;*/
+    /*padding: 20px;*/
+}
+
+.news-demo h1 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.news-demo .p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    margin-top: 70px;
+}
+
+.news-demo .p ~ p {
+    margin-top: 0;
+}
+
+.news-demo .p a {
+    text-decoration: underline;
+}
+
+.news-demo .p a:hover {
+    color: #B94040;
+}
+.selected{
+    background-color: #B94040;
+    color: white;
+}
+
+
+
+
+
+
+.news-holder p {
+    margin-bottom: 12px;
+}
+.news-holder {
+    max-width: 1180px;
+    margin: 0 auto;
+    font-family: Verdana, okns-serif;
+    font-size: 13px;
+}
+
+.news-holder * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+  color: #336699;
+  text-decoration: none;
+}
+
+.news-headlines {
+  list-style: none;
+  position: relative;
+}
+
+  .news-headlines li {
+    min-width: 15%;
+    height: 49px;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 20;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nh-anim {
+    -webkit-transition: all .75s ease-out;
+    -moz-transition: all .75s ease-out;
+    -o-transition: all .75s ease-out;
+    transition: all .75s ease-out;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+
+  .news-headlines li:hover {
+      cursor: pointer;
+  }
+  
+
+.news-headlines {
+   width: 100%;
+   height: 49px;
+   overflow: hidden;
+   background: #F9F9F9;
+}
+
+.pd-news-preview {
+   width: 100%;
+   position: relative;
+   z-index: 5;
+   margin-left: -1px;
+   min-height: 500px;
+   position: relative;
+}
+
+  .pd-news-preview img {
+    display: block;
+    border: solid 1px #999;
+    width: 100%;
+    height: auto;
+    max-width: 220px;
+    max-height: 143px;
+    margin: 0 auto 5px auto;
+  } 
+
+.pd-news-content {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+}
+.pd-news-content .wrapper{
+  width: 100%;
+  border-bottom: solid 1px #E0E0E0;
+}
+.first-filter-div {
+    height: 320px;
+    margin-top: 10px;
+}
+.first-filter-div {
+    width: 100%;
+    display: grid !important;
+    grid-template-columns: 1fr;
+}
+.first-filter-div .item {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    border-top: solid 1px #E0E0E0;
+}
+.first-filter-div .item p{
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 2%;
+    height: 100%;
+    background: white;
+}
+.first-filter-div .item .left{
+    background: #F9F9F9;
+    height: 100%;
+}
+
+.second-filter-div {
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.second-filter-div .first, .second-filter-div .second{
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+.second-filter-div .second{
+    width: 95%;
+    margin: auto;
+}
+.second-filter-div .second ul{
+    list-style: disc !important;
+}
+.second-filter-div .second ul li{
+    margin: 1%;
+}
+.thrd-filter-div {
+    flex-direction: column;
+}
+.thrd-filter-div .opinion-top{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.thrd-filter-div .opinion-top .left{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.thrd-filter-div .opinion-top .left .stars-inner{
+}
+.thrd-filter-div .opinion-top .left .stars-inner span{
+    color: #FF8A00;
+    font-size: 36px;
+    font-weight: bold;
+}
+.thrd-filter-div .opinion-top .left .stars-inner i{
+}
+.thrd-filter-div .opinion-top .left .mark-inner div{
+    display: flex;
+    justify-content: space-around;
+}
+.thrd-filter-div .opinion-top .left .mark-inner .mark {
+    width: 202px;
+    height: 11px;
+    background: #E0E0E0;
+    border-radius: 5px;
+}
+.thrd-filter-div .opinion-top .right{
+}
+
+.thrd-filter-div .opinion{
+  width: 100%;
+  border-top: solid 1px #E0E0E0;
+  border-bottom: solid 1px #E0E0E0;
+  padding: 2em;
+}
+.thrd-filter-div .right {
+    display: flex;
+    flex-direction: column;
+}
+.thrd-filter-div .right .add-opinion{
+  width: 164px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #B94040;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-left: 5%;
+}
+.thrd-filter-div .opinion {
+    grid-template-columns: 10% 90%;
+    display: grid;
+}
+.thrd-filter-div .opinion .left{
+    display: flex;
+    justify-content: space-around;
+}
+.thrd-filter-div .opinion .left .avatar{
+    width: 48px;
+    height: 48px;
+    background: gray;
+    border-radius: 50%;
+}
+.thrd-filter-div .opinion .left p{
+    align-self: center;
+}
+.thrd-filter-div .opinion .right{
+    padding: 5px;
+    flex-direction: column;
+}
+.thrd-filter-div .opinion .right div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.thrd-filter-div .add-opinion {
+    width: 100%;
+    grid-template-columns: 10% 90%;
+    display: grid;
+}
+.thrd-filter-div .add-opinion .left{
+    display: flex;
+    justify-content: space-around;
+}
+.thrd-filter-div .add-opinion .left .avatar{
+    width: 48px;
+    height: 48px;
+    background: gray;
+    border-radius: 50%;
+}
+.thrd-filter-div .add-opinion .left p{
+    align-self: center;
+}
+.thrd-filter-div .add-opinion .right .text-wrapper{
+    width: 100%;
+}
+.thrd-filter-div .add-opinion .right .text-wrapper input{
+    width: 87%;
+    border-radius: 2px;
+    position: relative;
+    padding: 10px 0 100px 10px;
+}
+.thrd-filter-div .add-opinion .right{
+    padding: 5px;
+}
+
+.choose-file {
+    height: 0.1px;
+    width: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .choose-file-inner {
+    display: flex;
+    background-color: #FCFCFC;
+    color: black;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .choose-file-inner img {
+      width: 22px;
+      border: none;
+  }
+  .choose-file-inner:hover {
+    background-color: #FCFCFC;
+  }
+ .choose-file-inner {
+    background-color: #FCFCFC;
+    outline: 1px solid #C8C8C8;
+  }
+  .add-an-opinion {
+      width: 164px;
+      height: 40px;
+      background: #B94040;
+      border-radius: 5px;
+  }
+.stars {
+    display: flex;
+    float: left;
+    margin-right: 10px;
+}
+.like-dis {
+    width: 60px !important;
+}
+.like-dis img {
+    width: 20px;
+    border: none;
+}
+.add-button-inner {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.top-content {
+    /*display: block;*/
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 2em;
+}
+.t3rd {
+    margin-top: 12em;
+}
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}

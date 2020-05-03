@@ -1,0 +1,352 @@
+.product-description-wrapper {
+	width: 1180px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+  justify-content: flex-start;
+  margin: auto;
+}
+.crumb-menu {
+	height: 55px;
+	display: flex;
+	align-items: center;
+}
+.crumb-menu a{
+  display: flex;
+  align-items: center;
+  color: #D3D3D3;
+  cursor: pointer;
+}
+.about-product {
+  width: 100%;
+  display: flex;
+}
+.car-inner {
+  width: 42%;
+  height: 550px;
+  background: red;
+}
+.desc-inner {
+  width: 58%;
+  height: 550px;
+}
+.desc-inner .info{
+  height: 470px;
+  padding-left: 7%;
+}
+.desc-inner .info .fst{
+  font-size: 1.3em;
+}
+.desc-inner .info .scnd{
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+}
+.desc-inner .info .thrsd{
+  height: 65px;
+  background: #F9F9F9;
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+}
+.desc-inner .info .thrsd span{
+  color: #B53D3A;
+  font-size: 2em;
+  margin-left: 0.8em;
+}
+.desc-inner .frth{
+  display: flex;
+  align-items: center;
+  height: 65px;
+}
+.desc-inner .frth span{
+  margin-left: 10%;
+  color: #B53D3A;
+}
+.desc-inner .fvth {
+  display: flex;
+  flex-direction: column;
+}
+.fvth-first {
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+/*the container must be positioned relative:*/
+.custom-select {
+  width: 152px;
+  height: 40px;
+  position: relative;
+  font-family: Arial;
+  margin-left: 10%;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #FCFCFC;
+  color: black;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: black transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent black transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #FCFCFC;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.fvth-second {
+  height: 55px;
+  display: flex;
+  align-items: center;
+}
+.count-div {
+  height: 28px;
+  width: 110px;
+  margin-left: 10%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  border: solid 1px #D2CACA;
+  cursor: pointer;
+}
+.count-div div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.count-div .count-value {
+  border-left: solid 1px #D2CACA;
+  border-right: solid 1px #D2CACA;
+}
+.fvth select {
+  width: 24%;
+  height: 40px;
+  background: #EEF1F2;
+}
+.sixth {
+  display: flex;
+  align-items: center;
+}
+.sixth .buy {
+  width: 110px;
+  height: 40px;
+  background: #B53D3A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.sevrth {
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.eigth {
+  display: flex;
+  align-items: center;
+}
+.eigth .paypal, .eigth .visa, .eigth .master {
+  background: white;
+  border: solid 1px #DADADA;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.eigth .paypal {
+  width: 94px;
+  height: 31px;
+  margin-left: 4%;
+}
+.eigth .visa {
+  width: 62px;
+  height: 31px; 
+  margin-left: 1%;
+}
+.eigth .master {
+  width: 62px;
+  height: 31px;
+  margin-left: 1%;
+}
+
+.sixth .add-to-cart {
+  width: 183px;
+  height: 40px;
+  background: #FEFEFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share {
+  width: 1180px;
+  height: 140px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+.desc-panel {
+  width: 1180px;
+  height: 1000px;
+  margin: auto;
+}
+.sm-car {
+  width: 1180px;
+  margin: auto;
+}
+.sm-car .small-title{
+  width: 1180px;
+  height: 40px;
+  border-bottom: solid 1px #D3D3D3;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+.sm-car .car-inner {
+  width: 100%;
+  height: 390px;
+  background: grey;
+}
+.gray {
+  background: #F6F6F6;
+}
+.all-page {
+  width: 1180px;
+  height: 850px;
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 3em;
+}
+.all-page .item{
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.all-page .item ul, .all-page .item img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.all-page .item1 {
+  height: 301px;
+}
+.all-page .item2 {
+  height: 411px;
+}
+.all-page .item3 {
+  height: 353px;
+}
+.all-page .item4 {
+  height: 379px;
+}
+.all-page .item5 {
+  height: 213px;
+}
+.all-page .item6 {
+  height: 377px;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  box-shadow: 1px 1px 3px 1px #b0b0b0;
+  border-radius: 3px;
+}
+
+.product-image {
+  position: relative;
+  margin-top: 20px;
+  height: 400px;
+  width: 500px;
+  overflow: hidden;
+}
+.product-image .image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("https://kontakt.az/wp-content/uploads/2020/02/g988_black.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-transition: -webkit-transform 0.5s ease-out;
+  transition: -webkit-transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, -webkit-transform 0.5s ease-out;
+  cursor: grab;
+}
+
+.product-thumbnails {
+  margin-top: 30px;
+}
+.product-thumbnails img {
+  height: 5vw;
+  border-radius: 0;
+  cursor: pointer;
+  position: relative;
+}
+.product-thumbnails img:hover {
+  opacity: 0.6;
+}
+
+.product-details {
+  margin-top: 30px;
+}
+.product-details p {
+  margin-top: 20px;
+}

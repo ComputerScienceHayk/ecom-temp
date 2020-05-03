@@ -1,0 +1,375 @@
+.cont {
+    width: 100%;
+  }
+  .my-action-info{
+      width: 1180px;
+      margin: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 60px;
+      margin-bottom: 30px;
+  }
+  .my-action-info .leftAction{
+      display: flex;
+      flex-direction: row;
+      width: 40%;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .my-action-info .leftAction img{
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+  }
+  .my-action-info .leftAction h3{
+      margin-top: 0;
+  }
+  .my-action-info .leftAction div .moneyRange {
+      width: 200px;
+      height: 17px;
+      background-color: #b3b3b3;
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+  }
+  .my-action-info .leftAction div .moneyRange input{
+      background-color: orange;
+      position: absolute;
+      width: 150px;
+      top: 0;
+      left: 0;
+      border-radius: 20px;
+      border: none;
+      height: 15px ;
+      color: white;
+      padding: 2px 3px;
+      text-align: center;
+  }
+  .my-action-info .rightAction button{
+      padding: 5px 10px;
+      background-image: linear-gradient(white, #d8d6d6);
+      border: 1px solid #a7a4a4;
+  }
+  .my-action-info .rightAction button i{
+     padding-right: 5px;
+  }
+  .my-action-info .leftAction p{
+      margin: 5px 0;
+  }
+  .my-acc-demo {
+      width: 1180px;
+      margin: auto;
+  }
+  
+  .my-acc-demo h1 {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #777;
+      margin-bottom: 40px;
+  }
+  
+  .my-acc-demo .p {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 22px;
+      margin-top: 70px;
+  }
+  
+  .my-acc-demo .p ~ p {
+      margin-top: 0;
+  }
+  
+  .my-acc-demo .p a {
+      text-decoration: underline;
+  }
+  
+  .my-acc-demo .p a:hover {
+      color: #B94040;
+  }
+  .selected{
+      background-color: #B94040;
+      color: white;
+  }
+  
+  /***********************************/
+  .bagInfo{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-bottom: 1px solid #cbcbcb;
+      padding: 20px 0 20px 0;
+  }
+  .bagInfo i{
+      color: #B94040;
+      font-size: 16px;
+  }
+  
+  .bagInfo li{
+      list-style: none;
+  }
+  
+  .bagInfo li:nth-child(1){
+      flex-grow: 0.3;
+  }
+  .bagInfo li:nth-child(1) a{
+      color: black;
+      font-size: 18px;
+  }
+  .bagInfo li:nth-child(1) a span{
+      color: #B94040;
+      font-weight: bold;
+      font-size: 20px;
+      margin-top: 10px;
+      display: block;
+  }
+  .my-news-content .bagInfo .makePurchase{
+      /*flex-grow: 0.1;*/
+      display: flex;
+      align-items: center;
+      flex-direction: inherit;
+      width: 15%;
+  }
+  .bagInfo .makePurchase button{
+      width: 100%;
+      height: 30px;
+      border: none;
+      background-color: #B94040;
+  }
+  .bagInfo .makePurchase button a{
+      color: white;
+      font-size: 14px;
+  }
+  .bagInfo li:nth-child(1) a:hover{
+     text-decoration: underline;
+  }
+  
+  .bagInfo .bagInfoImg{
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      float: left;
+      margin-right: 10px;
+      overflow: hidden;
+  }
+  
+  .bagInfo .bagInfoImg img{
+      width: 100%;
+  }
+  
+  /*********************/
+  .opinionImg{
+      text-align: center;
+      height: 100px;
+  }
+  .opinionImg img{
+      width: 25%;
+  }
+  .opinionText{
+      width: 50%;
+  }
+  .opinionText img{
+      width: 60px;
+      height: 60px;
+      border: 1px solid darkgray;
+  }
+  .opinionText button{
+      width: 100px;
+      border: none;
+      color: white;
+      padding: 8px 0;
+      cursor: pointer;
+      outline: none;
+  
+  }
+  .opinionText i{
+      color: black;
+  }
+  .opinionText button.save{
+      background-color: #B94040;
+  }
+  .opinionText button.cancel{
+      ackground-image: linear-gradient(white, darkgray);
+  }
+  .textChangeButtons{
+      text-align: right;
+  }
+  /*************/
+  .my-acc-pagination {
+      width: 1180px;
+      margin: auto;
+      display: flex;
+      justify-content: flex-end;
+  }
+  
+  .my-acc-pagination a {
+      color: black;
+      float: left;
+      padding: 5px 13px;
+      text-decoration: none;
+      transition: background-color .3s;
+      border: 1px solid #ddd;
+      font-size: 20px;
+      margin-left: 5px;
+  }
+  
+  .my-acc-pagination a.active {
+      background-color: black;
+      color: white;
+      border: 1px solid black;
+  }
+  
+  .my-acc-pagination a:hover:not(.active) {background-color: #ddd;}
+  
+  .custom-select {
+      position: relative;
+      font-family: Arial;
+      width: 100%;
+      margin-top: 10px;
+  }
+  
+  .custom-select select {
+      display: none; /*hide original SELECT element:*/
+  }
+  
+  /*.select-selected {*/
+  /*    background-color: DodgerBlue;*/
+  /*}*/
+  
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 14px;
+      right: 10px;
+      width: 0;
+      height: 0;
+      border: 6px solid transparent;
+      border-color: #000 transparent transparent transparent;
+  }
+  
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #000 transparent;
+      top: 7px;
+  }
+  
+  /*style the items (options), including the selected item:*/
+  .select-items div,.select-selected {
+      color: #000;
+      padding: 8px 16px;
+      /*border: 1px solid transparent;*/
+      /*border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;*/
+      cursor: pointer;
+      user-select: none;
+  
+  }
+  
+  /*style items (options):*/
+  .select-items {
+      margin-top: 10px;
+      background-color: white;
+      position: absolute;
+      /*!*background-color: DodgerBlue;*!*/
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+  }
+  
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+      display: none;
+  }
+  
+  .select-items div:hover, .same-as-selected {
+      background-color: rgba(0, 0, 0, 0.1);
+  }
+  .my-acc-demo .news-holder {
+      margin: 0 auto;
+      font-family: Verdana, sans-serif;
+      font-size: 13px;
+  }
+  
+  .news-headlines * {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  
+  a {
+    color: #336699;
+    text-decoration: none;
+  }
+  ul.news-headlines{
+      /*background-color: darkgray;*/
+  }
+  .news-headlines {
+    list-style: none;
+    position: relative;
+    padding: 0;
+    background-color: gray;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 10px;
+  }
+  
+    .news-headlines li {
+      padding: 5px 20px 5px 24px;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 20;
+      float: left;
+    }
+  
+    .nh-anim {
+      -webkit-transition: all .75s ease-out;
+      -moz-transition: all .75s ease-out;
+      -o-transition: all .75s ease-out;
+      transition: all .75s ease-out;
+      -webkit-transform: translateZ(0);
+      -moz-transform: translateZ(0);
+      -o-transform: translateZ(0);
+      transform: translateZ(0);
+    }
+    
+  
+    .news-headlines li:hover {
+        cursor: pointer;
+    }
+  
+  .news-preview {
+     width: 100%;
+     position: relative;
+     z-index: 5;
+     margin-left: -1px;
+     min-height: 640px;
+     position: relative;
+  }
+  .my-news-content {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      display: none;
+      width: 100%;
+  }
+  
+  .my-acc-demo .news-preview .top-content {
+      display: block;
+  }
+  
+  .my-acc-demo .cf:before,
+  .my-acc-demo .cf:after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+  }
+  
+  .my-acc-demo .cf:after {
+      clear: both;
+  }
+  
+  .my-acc-demo .cf {
+      *zoom: 1;
+  }

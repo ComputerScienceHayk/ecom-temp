@@ -1,0 +1,64 @@
+.all-pages-filter{
+	width: 1180px;
+	display: grid;
+	grid-template-columns: 21% 79%;
+	margin: auto;
+	margin-top: 3em
+}
+.all-pages-filter .left{
+	width: 100%;
+	background: green;
+}
+.left-crub-menu {
+	height: 350px;
+}
+.most-sold {
+	height: 520px;
+}
+.most-sold {
+
+}
+.most-sold hr{
+	
+}
+.most-solds-wrapper {
+	
+}
+.most-solds-wrapper .item-wrapper{
+	
+}
+.most-solds-wrapper .item-wrapper .item{
+	width: 221px;
+	height: 83px;
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.all-pages-filter .right{
+	width: 100%;
+	height: 50vh;
+	background: red;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.all-pages-filter .right .up{
+	width: 95%;
+	height: 122px;
+	background: grey;
+}
+.grid {
+	display: grid;
+}
+
+@media only screen and (max-width: 992px) {
+	.all-page {
+		width: 100% !important;
+		height: 850px;
+		display: grid;
+		grid-template-columns: 40% 40% ;
+		justify-content: space-between;
+		margin: auto;
+	}
+}
